@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { Input } from './ui/input'
@@ -6,11 +7,24 @@ import {Anton} from 'next/font/google'
 import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from '@/lib/firebase'
+import toast from 'react-hot-toast'
 
 const anton = Anton({weight: "400", subsets:['latin']})
 
 const Navbar = () => {
     const isAuthenticated = false;
+    const handleGoogleSignIn = async()=>{
+        try {
+        const provider = new GoogleAuthProvider();
+          const response = await signInWithPopup(auth, provider);
+          console.log(response)
+        } catch (error) {
+          console.log(error)
+          toast.error("Something went wrong. Please try again")
+        }
+      }
   return (
     <div className='flex items-center justify-between p-2'>
         <Link href={"/"}>
@@ -46,14 +60,13 @@ const Navbar = () => {
                     )
                 }
                 {
-                    !isAuthenticated && <Link href={"/login"}>
-                        <Button className='rounded-full bg-white border border-input hover:bg-blue-200 cursor-pointer transition duration-400 ease-in-out'>
+                    !isAuthenticated && 
+                        <Button onClick={handleGoogleSignIn} className='rounded-full bg-white border border-input hover:bg-blue-200 cursor-pointer transition duration-400 ease-in-out'>
                         <div className='flex items-center justify-center gap-x-2'>
                             <CircleUser className='text-[#4880dd]'/>
                             <p className='text-[#4880dd]'>Sign in</p>
                         </div>
                     </Button>
-                    </Link>
                 }
             </div>
         </div>
