@@ -17,6 +17,7 @@ bld/
 
 # Visual Studio code
 .vscode/
+.vs/
 
 # Resharper files
 _ReSharper*/
@@ -31,5 +32,5 @@ packages/
 *.usertasks
 
 # Sensitive data
-appsettings*.json
 *.pfx
+*.vsidx
