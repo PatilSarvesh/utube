@@ -15,8 +15,8 @@ const port = process.env.PORT || 8000;
 app.use(json());
 app.use(cors());
 
-app.use('/api', [userRouter])
-app.get('/api/health', healthChecker);
+app.use('/api/auth-service', [userRouter])
+app.get('/api/auth-service/health', healthChecker);
 
 app.listen(port, ()=>{
     console.log(`🚀Server is running on port: ${port}🚀`)
