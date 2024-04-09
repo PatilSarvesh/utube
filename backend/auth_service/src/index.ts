@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectToDatabase } from './utils/database';
 import { router as userRouter } from './routers/user.router';
+import { healthChecker } from './utils/health';
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(json());
 app.use(cors());
 
 app.use('/api', [userRouter])
+app.get('/api/health', healthChecker);
 
 app.listen(port, ()=>{
     console.log(`🚀Server is running on port: ${port}🚀`)
