@@ -1,0 +1,35 @@
+# Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio code
+.vscode/
+
+# Resharper files
+_ReSharper*/
+
+# NuGet
+*.nuget.config
+*.lock
+packages/
+
+# User-specific files
+*.userprefs
+*.usertasks
+
+# Sensitive data
+appsettings*.json
+*.pfx
