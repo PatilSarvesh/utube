@@ -11,43 +11,41 @@ namespace user_profile_service.Services
             _dbContext = dbContext;
         }
 
-        public async Task<UserProfile> CreteUserProfile(User user)
+        public async Task<bool> CreteUserProfile(User user)
         {
             try
             {
-                var ans = await _dbContext.UserProfiles.FindAsync(user.Id);
+                var profile = await _dbContext.UserProfiles.FindAsync(user.Id);
 
-                if (ans == null)
+                if (profile == null)
                 {
                     var userProfile = new UserProfile()
                     {
-                        Id = new Guid().ToString(),
+                        Id = user.Id,
                         FullName = user.FullName,
                         Email = user.Email,
                         PhoneNumber = user.PhoneNumber,
                         CreatedOn = user.CreatedOn,
-                        LikedVideos = new List<string>(),
-                        WatchLater = new List<string>(),
-                        MyVideos = new List<string>(),
-                        Subscribers = new List<string>(),
-                        Subscriptions = new List<string>(),
+                        LikedVideos = [],
+                        WatchLater = [],
+                        MyVideos = [],
+                        Subscribers = [],
+                        Subscriptions = [],
                     };
 
                     _dbContext.UserProfiles.Add(userProfile);
 
                     await _dbContext.SaveChangesAsync();
 
-                    return userProfile;
+                    return true;
 
                 }
-
-                return ans; // Successfully saved user
+                return true;
             }
             catch (Exception ex)
             {
-                // Log or handle exception
                 Console.WriteLine($"Error saving user: {ex.Message}");
-                return new UserProfile(); // Failed to save user
+                return false;
             }
         }
     }

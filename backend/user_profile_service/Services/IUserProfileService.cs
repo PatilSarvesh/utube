@@ -5,6 +5,6 @@ namespace user_profile_service.Services
 {
     public interface IUserProfileService
     {
-        Task<UserProfile> CreteUserProfile(User user);
+        Task<bool> CreteUserProfile(User user);
     }
 }
