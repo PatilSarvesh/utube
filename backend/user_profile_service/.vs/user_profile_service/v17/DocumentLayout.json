@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\YouTube\\utube\\backend\\user_profile_service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\endpoints\\userprofilemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:endpoints\\userprofilemodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\services\\iuserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:services\\iuserprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|d:\\youtube\\utube\\backend\\user_profile_service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53DB9793-4AAA-49A8-B05F-787DB0C5C7F9}|user_profile_service.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserProfileService.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\Services\\UserProfileService.cs",
+              "RelativeDocumentMoniker": "Services\\UserProfileService.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\Services\\UserProfileService.cs",
+              "RelativeToolTip": "Services\\UserProfileService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAEwDAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:35:42.822Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Models\\UserProfile.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\Models\\UserProfile.cs",
+              "RelativeToolTip": "Models\\UserProfile.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:11:20.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserProfileService.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\Services\\IUserProfileService.cs",
+              "RelativeDocumentMoniker": "Services\\IUserProfileService.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\Services\\IUserProfileService.cs",
+              "RelativeToolTip": "Services\\IUserProfileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:40:35.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserProfileModule.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\EndPoints\\UserProfileModule.cs",
+              "RelativeDocumentMoniker": "EndPoints\\UserProfileModule.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\EndPoints\\UserProfileModule.cs",
+              "RelativeToolTip": "EndPoints\\UserProfileModule.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:39:05.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAUwCwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:36:51.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:36:13.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\YouTube\\utube\\backend\\user_profile_service\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\YouTube\\utube\\backend\\user_profile_service\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T06:35:47.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

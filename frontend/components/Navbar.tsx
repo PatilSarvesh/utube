@@ -22,7 +22,7 @@ const Navbar = () => {
           console.log(response)
         } catch (error) {
           console.log(error)
-          toast.error("Something went wrong. Please try again")
+          toast.error("Something went wrong. Please try again.")
         }
       }
   return (
