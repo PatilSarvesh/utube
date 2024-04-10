@@ -17,11 +17,12 @@ namespace user_profile_service.EndPoints
                 return Results.Json(userProfile);
             });
 
-            app.MapPost("/add-to-my-video", async (IUserProfileService userProfileService, string videoId, string userId) =>
+            app.MapPost("/add-to-my-video", async (IUserProfileService userProfileService, Video video) =>
             {
-                await userProfileService.AddToMyVideos(videoId, userId);
-                return Results.Ok();
+                var res = await userProfileService.AddToMyVideos(video);
+                return Results.Json(res);
             });
- 
+
+        }
     }
 }

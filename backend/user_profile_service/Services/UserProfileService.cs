@@ -49,17 +49,17 @@ namespace user_profile_service.Services
             }
         }
 
-        public async Task<bool> AddToMyVideos(string videoId, string userId)
+        public async Task<bool> AddToMyVideos(Video video)
         {
             try
             {
-                var profile = await _dbContext.UserProfiles.FindAsync(userId);
+                var profile = await _dbContext.UserProfiles.FindAsync(video.userId);
 
-                if(profile == null)
+                if (profile == null)
                 {
                     return false;
                 }
-                profile.MyVideos.Add(videoId);
+                profile.MyVideos.Add(video.videoId);
 
                 _dbContext.UserProfiles.Update(profile);
                 await _dbContext.SaveChangesAsync();
@@ -71,6 +71,6 @@ namespace user_profile_service.Services
                 return false;
             }
         }
-        
+
     }
 }
