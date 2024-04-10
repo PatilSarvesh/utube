@@ -48,5 +48,29 @@ namespace user_profile_service.Services
                 return false;
             }
         }
+
+        public async Task<bool> AddToMyVideos(string videoId, string userId)
+        {
+            try
+            {
+                var profile = await _dbContext.UserProfiles.FindAsync(userId);
+
+                if(profile == null)
+                {
+                    return false;
+                }
+                profile.MyVideos.Add(videoId);
+
+                _dbContext.UserProfiles.Update(profile);
+                await _dbContext.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving video: {ex.Message}");
+                return false;
+            }
+        }
+        
     }
 }
