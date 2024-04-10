@@ -1,10 +1,11 @@
 ﻿using Carter;
+using Microsoft.AspNetCore.Mvc;
 using user_profile_service.Models;
 using user_profile_service.Services;
 
 namespace user_profile_service.EndPoints
 {
-    public class UserProfileModule : ICarterModule
+    public class UserProfileModule : CarterModule
     {
         public UserProfileModule() : base("/api/user-profile-service") { }
 
@@ -18,9 +19,9 @@ namespace user_profile_service.EndPoints
 
             app.MapPost("/add-to-my-video", async (IUserProfileService userProfileService, string videoId, string userId) =>
             {
-                 await userProfileService.AddToMyVideos(videoId, userId);
+                await userProfileService.AddToMyVideos(videoId, userId);
                 return Results.Ok();
             });
-        }
+ 
     }
 }

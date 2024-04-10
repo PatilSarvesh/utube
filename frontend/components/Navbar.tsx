@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from '@/lib/firebase'
 import toast from 'react-hot-toast'
+import Logo from './Logo'
 
 const anton = Anton({weight: "400", subsets:['latin']})
 
@@ -29,11 +30,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between p-2'>
         <Link href={"/"}>
             <div className='flex items-center justify-start gap-x-1'>
-                <Image src={'/logo.png'} width={48} height={48} alt='logo'/>
-                <p className={cn(
-                    'text-2xl font-semibold',
-                    anton.className
-                )}>YouTube</p>            
+                <Logo/>
             </div>
         </Link>
         <div className='flex items-center justify-center'>

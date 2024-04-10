@@ -124,9 +124,6 @@ ipch/
 # TFS 2012 Local Workspace
 $tf/
 
-# Guidance Automation Toolkit
-*.gpState
-
 # ReSharper is a .NET coding add-in
 _ReSharper*/
 *.[Rr]e[Ss]harper
@@ -175,6 +172,7 @@ DocProject/Help/*.hhk
 DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
+
 
 # Click-Once directory
 publish/
@@ -399,4 +397,8 @@ FodyWeavers.xsd
 *.sln.iml
 
 *DocumentLayout.json
+
+# Sensitive data
+*.pfx
+
 *.vsidx
