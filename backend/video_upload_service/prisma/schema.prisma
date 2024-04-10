@@ -7,3 +7,15 @@ datasource db {
   url       = env("DATABASE_URL")
   directUrl = env("DATABASE_URL_UNPOOLED")
 }
+
+model Video {
+  id           String  @id @unique @default(uuid())
+  title        String
+  description  String
+  isPublic     Boolean @default(true)
+  url          String
+  userId       String
+  category     String
+  isDeleted    Boolean @default(false)
+  thumbnailUrl String?
+}
