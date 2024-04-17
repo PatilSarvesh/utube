@@ -24,7 +24,7 @@ export const signIn = async (req: Request, res: Response) => {
             };
             user = await new User(newUser).save();
             id = user.id;
-            await axios.post(`${process.env.USER_PROFILE_SERVICE!}/create-profile`, { ...newUser, id: user.id });
+            await axios.post(`${process.env.USER_PROFILE_SERVICE!}/create-profile`, { ...newUser, id: user.id, createdOn: user.createdAt });
         } else {
             id = user.id!;
         }
