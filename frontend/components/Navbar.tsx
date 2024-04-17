@@ -1,28 +1,32 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { Input } from './ui/input'
 import {Bell, CircleUser, Search, Video} from 'lucide-react'
-import {Anton} from 'next/font/google'
-import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth } from '@/lib/firebase'
 import toast from 'react-hot-toast'
 import Logo from './Logo'
+import axios from 'axios'
 
-const anton = Anton({weight: "400", subsets:['latin']})
 
 const Navbar = () => {
-    const isAuthenticated = false;
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+
     const handleGoogleSignIn = async()=>{
         try {
         const provider = new GoogleAuthProvider();
           const response = await signInWithPopup(auth, provider);
-          console.log(response)
+          const {displayName, email, phoneNumber} = response.user
+          const token = await response.user.getIdToken()
+          const data = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/auth-service/sign-in`, {fullName: displayName, email,phoneNumber,token})
+          if(data.status === 200){
+            setIsAuthenticated(true)
+          }
         } catch (error) {
-          console.log(error)
+          console.log("err0", error)
           toast.error("Something went wrong. Please try again.")
         }
       }
